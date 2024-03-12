@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Arpit </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Projects</a></li>
+        <!-- <li><a href="#projects">Projects</a></li> -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Arpit</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Projects</a></li>
+        <!-- <li><a href="#projects" onclick="toggleMenu()">Projects</a></li> -->
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="picofme.png" alt="manish profile picture" class="photo" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">ARPIT</h1>
+      <p class="section__text__p2" style="margin-bottom: 0rem;">Pre Final Year Btech Student</p>
+      <p class="section__text__p2" >Aspiring Data Scientist</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('ARPIT CV.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/arpit-0a4a2821a/" />
+        <img src="github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/arpitmastermind'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="bg2.webp" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <!-- <div class="details-container">
+            <img src="experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>4+ years <br />Process Engineer</p>
+          </div> -->
+          <div class="details-container">
+            <img src="education.png" alt="Education icon" class="icon" />
+            <h2>Education</h2>
+            <h3>1. B.Tech in Electronics & Communication Engineering<br> <p> Chhatrapati Shahu JI Maharaj University Kanpur </p>
+              <p> Nov. 2021- June 2025</p>
+              <br>
+            <h3>2. BS in Data Science & Applications <br> <p> Indian Institute of Technology Madras (Hybrid) </p>
+              <p> Jan. 2022- June 2026</p>  
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            As an aspiring data scientist with a deep interest in technology and machine learning, I am passionate about harnessing the power of data to drive innovation and create meaningful impact in various industries.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container" >
+          <h2 class="experience-sub-title">1. ANALYZE ECOMMERCE SALES DATA </h2>
+          <p class="address" style="text-align: center;">In this project, I engineered an interactive dashboard specifically designed to monitor and analyze online sales data. By implementing sophisticated parameters, users could efficiently drill down into the dataset, aided by customizable filters and slicers. Through a range of tailored visualizations, including dynamic connections for data manipulation, users were empowered to drive parameter-driven adjustments and gain actionable insights. This tool not only offers a comprehensive overview of online sales performance but also equips stakeholders with the tools to make data-driven decisions, ultimately optimizing strategies for business success <br>
+            </p>
+            <img src="sales data png.png" style="height: 50vh ;width: 60vw;margin-top: 20px;">
+            <h2><a href="https://github.com/arpitmastermind/ANALYZE-ECOMMERCE-SALES-DATA">Project Link
+
+            </a> </h2>
+          
+          
+        </div>
+        <div class="details-container" >
+          <h2 class="experience-sub-title">2. CRICKET ANALYTICS: OPTIMIZING TEAM SELECTION</h2>
+          <p class="address"> A Sports data analytics project to analyze cricket statistics
+            and facilitate the selection of the best 11 players for league
+            matches
+           • Used customized visualizations and established robust data
+            connections,empowering user-driven parameters for enhanced
+            interactivity and data manipulation within the project scope</p>
+            <img src="crick.png" style="height: 50vh ;width: 60vw;margin-top: 20px;" alt="">
+            <h2><a href="https://github.com/arpitmastermind/CRICKET-ANALYTICS-OPTIMIZING-TEAM-SELECTION">Project Link
+
+            </a> </h2>
+          
+        </div>
+        <!-- <div class="details-container" >
+          
+          <h2 class="experience-sub-title">3. NV Distillery Pvt. Ltd</h2>
+          <p class="address">Ambala (Haryana) </p>
+          <h4> 15 Dec. 2022 to till Now</h4>
+          <h3>Working as Shift Engineer</h3>
+
+        </div> -->
+
+
+      </div>
+    </div style="margin-top: 40vw;">  
+      <img src="arrow.png"  alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact" style="margin-top: 40vw;">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="arpit.career1@gmail.com">arpit.career1@gmail.com
+
+          </a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="call.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p>+91-8957421016</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <p>Copyright &#169; 2024 ARPIT. <br></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
